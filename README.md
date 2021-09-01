@@ -15,7 +15,7 @@ InfluxDB 2.0.3
 1. 访问http://localhost:8086
 2. 点击Get Started
 3. 配置username、password、organization、bucket等
-![image-20210901181838621](.\static\image-20210901181838621.png)
+![image-20210901181838621](static/image-20210901181838621.png)
 4. 配置token
 点击左侧菜单》Data》Tokens》Generate Token选择Read/Write Token
 选择创建的bucket，点击Save
@@ -35,13 +35,13 @@ InfluxDB 2.0.3
 ## 环境测试
 ### Jmeter配置BackendListener
 **默认方式**：
-![image-20210901184120601](.\static\image-20210901184120601.png)
+![image-20210901184120601](static/image-20210901184120601.png)
 1. BackendListener中选择InfluxDBRawBackendListenerClient
 2. influxdbUrl 配置为 http://<你的IP>:8086/api/v2/write?org=<你的org>&bucket=<你的bucket>
 3. influxdbToken 配置为 创建的token
 4. measurement 配置为jmeter
 5. Jmeter中创建一个HTTP Request或Java Request都可以，设置无线循环，运行查看数据结果
-6. 直接在查看InfluxDb上的数据显示![image-20210901185224809](.\static\image-20210901185224809.png)
+6. 直接在查看InfluxDb上的数据显示![image-20210901185224809](static/image-20210901185224809.png)
 
 **改进方式**：需要Java11
 1. 下载jmeter插件https://github.com/mderevyankoaqa/jmeter-influxdb2-listener-plugin/ 

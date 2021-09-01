@@ -22,13 +22,15 @@ InfluxDB 2.0.3
 ### 初始化grafana
 1. 访问http://localhost:3000  ，初始密码为admin/admin
 2. 配置datasource
-2.1 点击左侧菜单》设置》Data Sources》Add DataSource》选择influxdb  进入设置页面
-2.2 Query Language 选择 Flux
-2.3 URL 填写 http://influxdb:8086
-2.4 Organization 填写 创建的 organization
-2.5 Token 填写 在influxdb中创建的token
-2.6 Default Bucket 填写 创建的 bucket
-2.7 点击Save&test
+  >
+  2.1 点击左侧菜单》设置》Data Sources》Add DataSource》选择influxdb  进入设置页面
+  2.2 Query Language 选择 Flux
+  2.3 URL 填写 http://influxdb:8086
+  2.4 Organization 填写 创建的 organization
+  2.5 Token 填写 在influxdb中创建的token
+  2.6 Default Bucket 填写 创建的 bucket
+  2.7 点击Save&test
+ 
 3. 配置Dashbord
 下载https://grafana.com/grafana/dashboards/13644 Json文件，这个只针对改进方式显示
 点击左侧+按钮，选择Import导入Json，选择数据源点击Import
